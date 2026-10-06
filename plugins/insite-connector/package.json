@@ -1,0 +1,12 @@
+{
+  "name": "insite-connector",
+  "private": true,
+  "scripts": {
+    "test": "phpunit",
+    "env:start": "wp-env start",
+    "env:stop": "wp-env stop"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.20.0"
+  }
+}

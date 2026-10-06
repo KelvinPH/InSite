@@ -1,0 +1,22 @@
+[
+  {
+    "name": "empty-get",
+    "method": "GET",
+    "path": "/wp-json/insite/v1/status",
+    "timestamp": "1700000000",
+    "nonce": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "body": "",
+    "secret": "test-secret-key-32chars-minimum!!",
+    "signature": "734d6a3aeacbd924d419152c54d98b5b19e7157be1c77edf331cd64dda56d40f"
+  },
+  {
+    "name": "post-update",
+    "method": "POST",
+    "path": "/wp-json/insite/v1/update",
+    "timestamp": "1700000000",
+    "nonce": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "body": "{\"type\":\"plugin\",\"slug\":\"akismet\"}",
+    "secret": "test-secret-key-32chars-minimum!!",
+    "signature": "4a62b747a0ca2359151ebc83c6b703cbfdec35434b3e58afb0e119419a82cb5f"
+  }
+]

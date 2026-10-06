@@ -1,0 +1,21 @@
+## Error Type
+Build Error
+
+## Error Message
+Export SiteHealthPayload doesn't exist in target module
+
+## Build Output
+./apps/web/.next-internal/server/app/(app)/settings/page/actions.js:9:1
+Export SiteHealthPayload doesn't exist in target module
+   7 | export {refreshSiteAction as '40cb53d5b5156757939add9e75a67348e5dbf9ce18'} from 'ACTIONS_MODULE0'
+   8 | export {updateOnSiteAction as '70e75883ee354a4c047f53c4629b285536038c4cb1'} from 'ACTIONS_MODULE0'
+>  9 | export {SiteHealthPayload as '7f2bd4a050274114615e9bea286a33f1b5462227c5'} from 'ACTIONS_MODULE0'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | export {SiteStatusPayload as '7f84561836e6fa11e1b7bb0cbda52dc0f663ff0efb'} from 'ACTIONS_MODULE0'
+  11 |
+
+The export SiteHealthPayload was not found in module [project]/apps/web/src/app/actions/sites.ts [app-rsc] (ecmascript).
+Did you mean to import inviteMemberAction?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Next.js version: 15.5.27 (Turbopack)
